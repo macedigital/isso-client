@@ -59,3 +59,8 @@ typings/
 
 # next.js build output
 .next
+
+# project-related folders
+dist/
+.DS_Store
+public/bundle.*
