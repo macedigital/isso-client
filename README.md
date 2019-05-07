@@ -1,10 +1,10 @@
 # isso-client
 
-An alternative to official [isso][2] javascript client libraries.
+Using [Svelte][3] for replacing the official hand-crafted [isso][2] client libraries with modern Web API counterparts.
 
 ## Development
 
-This is project is using [Svelte][3].
+**NOTE: Project is work in progress at the moment!**
 
 Clone the project and install dependencies ...
 
@@ -22,9 +22,13 @@ npm ci
 npm run dev
 ```
 
-Navigate to [localhost:10001](http://localhost:10001). You should see your app running. Edit a component file in `src`, save it. If livereload isn't working (which it should), reload the page to see your changes.
+Navigate to [localhost:10001](http://localhost:10001).
 
-## Building library
+You should see your app running. Edit a component file in `src`, save it.
+
+If livereload isn't working (which it should), reload the page to see your changes.
+
+### Building library
 
 Running a build
 
@@ -33,6 +37,12 @@ npm run build
 ```
 
 will put minified files into the `/dist` folder, which are ready for production.
+
+### Why svelte?
+
+- Compiles components down to plain vanilla javascript
+- Small bundle size with no additional runtime requirements
+- Fully reactive with minimum amount of code to write
 
 ## License
 
