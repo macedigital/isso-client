@@ -63,4 +63,7 @@ typings/
 # project-related folders
 dist/
 .DS_Store
-public/bundle.*
+public/*.css
+public/*.js
+public/*.map
+!public/global.css
