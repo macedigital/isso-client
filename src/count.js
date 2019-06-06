@@ -1,4 +1,4 @@
-import { getCommentCounts } from './api';
+import { count } from './api';
 
 const elements = new Map();
 const domElements = document.querySelectorAll('a[href$="#isso-thread"],a[data-isso-id]');
@@ -28,7 +28,7 @@ for (const link of domElements) {
 if (elements.size) {
     const urls = Array.from(elements.keys());
 
-    getCommentCounts(urls).then(counts => counts.forEach((count, index) => {
+    count(urls).then(counts => counts.forEach((count, index) => {
         const content = count ? `${count} comment(s)` : 'No comments';
         elements.get(urls[index]).forEach(link => {
             link.textContent = content;
