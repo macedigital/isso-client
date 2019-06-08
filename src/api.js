@@ -2,8 +2,16 @@ import { endpoint } from './config';
 
 const makeUrl = url => new URL(`${endpoint}/${url}`);
 
+const addCookie = headers => {
+    const cookie = headers.get('x-set-cookie');
+    if (cookie && cookie.match(/^isso-/)) {
+        document.cookie = cookie;
+    }
+};
+
 const responseHandler = response => {
     if (response.ok) {
+        addCookie(response.headers);
         return response.json();
     }
     throw new Error(response.statusText);
