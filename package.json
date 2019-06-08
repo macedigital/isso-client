@@ -11,7 +11,7 @@
     "eslint": "5.16.0",
     "eslint-plugin-svelte3": "1.2.3",
     "rimraf": "2.6.3",
-    "rollup": "1.14.2",
+    "rollup": "1.14.4",
     "rollup-plugin-commonjs": "10.0.0",
     "rollup-plugin-livereload": "1.0.0",
     "rollup-plugin-node-resolve": "5.0.1",
